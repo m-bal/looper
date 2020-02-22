@@ -1,0 +1,25 @@
+{
+  
+  "browser_action": {
+    "browser_style": true,
+    "default_title": "Loops youtube video",
+    "default_popup": "cookies.html"
+  },
+
+
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["looper.js"]
+    }
+  ],
+
+  "description": "Loops youtube video",
+  "manifest_version": 2,
+  "name": "Looper",
+
+
+  "permissions": ["webNavigation"],
+  "version": "0.1"
+
+}
