@@ -9,7 +9,7 @@
 
   "content_scripts": [
     {
-      "matches": ["*://www.youtube.com/*"],
+      "matches": ["https://www.youtube.com/watch?*"],
       "js": ["looper.js"]
     }
   ],
@@ -17,9 +17,11 @@
   "description": "Loops youtube video",
   "manifest_version": 2,
   "name": "Looper",
-
-
-  "permissions": ["webNavigation"],
+  "permissions": [
+    "https://www.youtube.com/watch?*",
+    "webRequest",
+    "activeTab"
+  ],
   "version": "0.1"
 
 }
