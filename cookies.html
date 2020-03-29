@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <style>
 body {
   font-family: 'Courier New', Courier, monospace;
@@ -16,9 +16,9 @@ input[type=text], select {
   font-family: 'Courier New', Courier, monospace;
 }
 
-input[type=button] {
+button {
   width: 100%;
-  background-color: rgb(25, 28, 219);
+  background-color: #191cdb;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -29,7 +29,7 @@ input[type=button] {
   font-weight: bold;
 }
 
-input[type=button]:hover {
+button:hover {
   background-color: #5a6edf;
 }
 
@@ -41,17 +41,19 @@ div.container {
 </style>
 
 <body>
-    <div class="container">
-        <h3> Enter Times for Loops </h3>
-            <form id="enterTimes">
-                <label for="sTime">Start Time</label>
-                <input type="text" id="sTime" name="StartTime" placeholder="HH:MM:SS">
+<div class="container">
+    <h3> Enter Times for Loops </h3>
+        <form id="frm_times">
+            <label for="sTime">Start Time</label>
+            <input type="text" id="sTime" name="StartTime" placeholder="HH:MM:SS">
 
-                <label for="eTime">End Time</label>
-                <input type="text" id="sTime" name="EndTime" placeholder="HH:MM:SS">
-                <input type="button" onclick="modifyTimes()" value="Submit">
-            </form>
-            
-    </div>
+            <label for="eTime">End Time</label>
+            <input type="text" id="eTime" name="EndTime" placeholder="HH:MM:SS">
+            <button onclick="modifyTimes()"> Submit </button>
+        </form>   
+</div>
+<p id="demo"></p>
+<script src="./looper.js"></script>
 </body>
 </html>
+

@@ -7,8 +7,6 @@ ytplayer = document.getElementsByClassName('video-stream')[0];
 
 var start_time;
 var end_time;
-start_time = 10;
-end_time = (3*60)+8;
 
 function youtubeTime(event){
 	
@@ -21,7 +19,11 @@ function youtubeTime(event){
 }
 
 function modifyTimes(){
-		document.getElementById("enterTimes").submit();
+    var x = document.getElementById("frm_times");
+    start_time = x.elements[0].value;
+	end_time = x.elements[1].value;
+	console.log("Printing out start time");
+	console.log(start_time);
+    document.getElementById("demo").innerHTML = start_time + end_time;
 }
-
 ytplayer.addEventListener('timeupdate', youtubeTime);
