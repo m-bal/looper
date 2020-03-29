@@ -5,13 +5,23 @@
 
 ytplayer = document.getElementsByClassName('video-stream')[0];
 
+var start_time;
+var end_time;
+start_time = 10;
+end_time = (3*60)+8;
+
 function youtubeTime(event){
 	
-	if(ytplayer.currentTime < 10){
-		ytplayer.currentTime = 10;
+	if(ytplayer.currentTime < start_time){
+		ytplayer.currentTime = start_time;
 	}
-	if(ytplayer.currentTime > (3*60)+8){
-		ytplayer.currentTime = 10;
+	if(ytplayer.currentTime > end_time){
+		ytplayer.currentTime = start_time;
 	}
 }
+
+function modifyTimes(){
+		document.getElementById("enterTimes").submit();
+}
+
 ytplayer.addEventListener('timeupdate', youtubeTime);
