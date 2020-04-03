@@ -3,9 +3,13 @@
   "browser_action": {
     "browser_style": true,
     "default_title": "Loops youtube video",
-    "default_popup": "cookies.html"
+    "default_popup": "cookies.html",
+    "default_icon": "icon.png"
   },
 
+  "background": {
+      "scripts": ["background.js"]
+  },
 
   "content_scripts": [
     {
