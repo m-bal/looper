@@ -6,7 +6,6 @@
     "default_popup": "cookies.html"
   },
 
-
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/watch?*"],
