@@ -50,11 +50,12 @@ div.container {
 
             <label for="eTime">End Time</label>
             <input type="text" id="eTime" name="EndTime" placeholder="HH:MM:SS">
-            <button onclick="modifyTimes()"> Submit </button>
+            <button id ="timesubmit"> Submit </button>
         </form>   
 </div>
 <p id="demo"></p>
-<script src="./looper.js"></script>
+<!---so you can't have javascript code anywhere outside of the script tag so you can't do onclick="modify.."-->
+<script src="popup.js"></script>
 </body>
 </html>
 

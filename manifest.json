@@ -13,7 +13,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/watch?*"],
+      "matches": ["https://www.youtube.com/watch?*", "<all_urls>"],
       "js": ["looper.js"]
     }
   ],
@@ -22,9 +22,11 @@
   "manifest_version": 2,
   "name": "Looper",
   "permissions": [
+    "<all_urls>",
     "https://www.youtube.com/watch?*",
     "webRequest",
-    "activeTab"
+    "activeTab",
+    "tabs"
   ],
   "version": "0.1"
 
