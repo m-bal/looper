@@ -14,5 +14,3 @@ function modifyTimes(){
 	console.log(start_time);
     document.getElementById("demo").innerHTML = start_time + end_time;
 }
-
-//console.log(start_time);
