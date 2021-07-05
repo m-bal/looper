@@ -1,48 +1,13 @@
 <!DOCTYPE html>
-<meta charset="utf-8"/>
-<html> 
-<style>
-body {
-  font-family: 'Courier New', Courier, monospace;
-}
-
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-button {
-  width: 100%;
-  background-color: #191cdb;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #5a6edf;
-}
-
-div.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-</style>
-
-<body>
-<div class="container">
+<meta charset="utf-8" />
+<html>
+  <link
+    href="./noUiSlider-14.5.0/distribute/nouislider.min.css"
+    rel="stylesheet"
+  />
+  <body>
+    <div id="slider"></div>
+    <!-- <div class="container">
     <h3> Enter Times for Loops </h3>
         <form id="frm_times">
             <label for="sTime">Start Time</label>
@@ -52,10 +17,10 @@ div.container {
             <input type="text" id="eTime" name="EndTime" placeholder="HH:MM:SS">
             <button id ="timesubmit"> Submit </button>
         </form>   
-</div>
-<p id="demo"></p>
-<!---so you can't have javascript code anywhere outside of the script tag so you can't do onclick="modify.."-->
-<script src="popup.js"></script>
-</body>
-</html>
+</div> -->
 
+    <!---so you can't have javascript code anywhere outside of the script tag so you can't do onclick="modify.."-->
+    <script src="./noUiSlider-14.5.0/distribute/nouislider.min.js"></script>
+    <script src="popup.js"></script>
+  </body>
+</html>

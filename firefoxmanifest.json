@@ -12,7 +12,7 @@
 
   "content_scripts": [
     {
-      "matches": ["https://www.youtube.com/watch?*"],
+      "matches": ["https://www.youtube.com/watch?*", "<all_urls>"],
       "js": ["looper.js"]
     }
   ],
@@ -28,5 +28,10 @@
     "tabs",
     "storage"
   ],
-  "version": "0.1"
+  "version": "0.1",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "addon@example.com"
+    }
+  }
 }
